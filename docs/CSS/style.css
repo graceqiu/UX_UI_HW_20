@@ -1,0 +1,344 @@
+/* Main */
+
+:root {
+    --background: #F5F3EF;
+    --accentPrimary: #703017;
+    --accentSecondary: #32584C;
+    --textColor: #181717;
+    --fontPrimary: 'Roboto', sans-serif;
+    --fontSecondary: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 2% 3%;
+    background-color: var(--background);
+    display: none;
+}
+
+#container {
+    margin: 0% 5%;
+}
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+/* Special Effects */
+
+.underlineHover {
+    display: inline-block;
+    padding-bottom:2px;
+    background-image: linear-gradient(var(--accentSecondary), var(--accentSecondary));
+    background-position: 0 100%; 
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s;
+}
+  
+.underlineHover:hover {
+background-position: 100% 100%;
+background-size: 100% 2px;
+}
+
+/* Text  */
+
+h1, h2, p, a {
+    color: var(--textColor);
+    margin: 0;
+}
+
+h1, h2, a {
+    font-family: var(--fontSecondary);
+    text-transform: lowercase;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: -0.08em;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--accentSecondary);
+    text-decoration: none;
+}
+
+p {
+    font-family: var(--fontPrimary);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.altTextPrimary {
+    color: var(--accentPrimary);   
+}
+
+.altTextSecondary {
+    color: var(--accentSecondary);   
+}
+
+.bodySubtext {
+    color: var(--accentSecondary);
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+/* Arrow Links */
+
+.arrowLink {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 5%;
+}
+
+.arrowLink .arrowLinkText {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--accentSecondary);
+    display: none;
+    transition: 0.3s;
+}
+
+.arrowLink .material-icons.md-48 { 
+    font-size: 48px; 
+    color: var(--accentPrimary);
+    transition: 0.3s;
+}
+
+.arrowLink .material-icons.md-48:hover {
+    font-size: 36px; 
+    color: var(--accentSecondary);
+}
+
+.arrowLink .material-icons.md-48:hover + .arrowLinkText {
+    display: block;
+}
+
+/* Primary Nav */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--background);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 94%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+header #logo {
+    position: relative;
+}
+
+header #logo h1 {
+    position: absolute;
+    transform: translate(0, -50%);
+}
+
+header a {
+    text-decoration: none;
+}
+
+header #primaryNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25%;
+}
+
+header #primaryNav li a {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Secondary Nav */
+
+header #primaryNav #primaryNavProjects {
+    position: relative;
+}
+
+header #primaryNav #primaryNavProjects #secondaryNavToggle {
+    transition: 0.3s;
+}
+
+header #primaryNav #primaryNavProjects #secondaryNav {
+    position: absolute;
+    transform: translate(-40%, 10%);
+    width: 400px;
+    padding: 0;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header #primaryNav #primaryNavProjects #secondaryNav li {
+    margin: 20px 20px;
+}
+
+header #primaryNav #primaryNavProjects #secondaryNav li a {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Full Page Sections */
+
+.fullPageSection {
+    height: 98vh;
+    display: flex;
+    flex-direction: column-reverse; /* for arrow links to align bottom */
+}
+
+.fullPageSection .absoluteCenteredContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 84%;
+}
+
+/* Home: Hero */
+
+#homeHero {
+    text-align: center;
+}
+
+#homeHero #homeHeroAltText {
+    opacity: 0;
+}
+
+/* Home: Projects */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 150px 0px 150px 0px;
+}
+
+#projects .projectCard {
+    display: flex;
+    height: 308px;
+}
+
+#projects .projectCard .projectText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#projects .projectCard .projectText .projectDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#projects .projectCard .projectText .projectDesc .subtext{
+    font-size: 14px;
+    margin: 0;
+}
+
+/* About: Hero */
+
+#aboutHero .absoluteCenteredContent {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+#aboutHero .absoluteCenteredContent #aboutText{
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#aboutHero .absoluteCenteredContent img {
+    width: 481px;
+    height: 410px;
+    object-fit: cover;
+}
+
+#aboutHero .absoluteCenteredContent #skillsGrid {
+    display: grid;
+    grid-template-areas: 
+    "skillType skillDetails"
+    "skillType skillDetails"
+    "skillType skillDetails";
+    column-gap: 110px;
+    row-gap: 10px;
+}
+
+#aboutHero .absoluteCenteredContent #skillsGrid p {
+    text-transform: lowercase;
+}
+
+/* About: Background */
+
+#aboutBackground .absoluteCenteredContent {
+    top: 150%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#aboutBackground .absoluteCenteredContent #backgroundTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer  */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h1 {
+    font-family: var(--fontSecondary);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+}
+
+#footerItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
