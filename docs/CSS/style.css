@@ -88,6 +88,8 @@ a:hover {
 }
 
 p {
+    margin: 0;
+    padding: 0;
     font-family: var(--fontPrimary);
     font-size: 18px;
     font-weight: 300;
@@ -325,6 +327,14 @@ header #primaryNav #primaryNavProjects #secondaryNav li a {
 #aboutBackground .absoluteCenteredContent #backgroundTitle {
     display: flex;
     justify-content: space-between;
+}
+
+/* Project 1: Nomad */
+
+#project1Hero .absoluteCenteredContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
 /* Footer  */
