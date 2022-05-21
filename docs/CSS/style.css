@@ -337,6 +337,12 @@ header #primaryNav #primaryNavProjects #secondaryNav li a {
     gap: 3em;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* Footer  */
 
 footer {

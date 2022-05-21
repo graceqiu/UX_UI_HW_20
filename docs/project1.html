@@ -49,14 +49,105 @@
             <div class="arrowLinkDiv">
                 <a class="arrowLink" id="homeArrowLink" href="#project1Details">
                     <span class="material-icons md-48">arrow_downward</span>
-                    <span class="arrowLinkText">see projects</span>
+                    <span class="arrowLinkText">project details</span>
                 </a>
             </div>
         </section>
 
         <section class="fullPageSection" id="project1Details">
             <div class="absoluteCenteredContent">
-                
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            01/ user research
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>In order to assess how people will make travel decisions in this post-pandemic world, it’s necessary to understand the process and tools participants used when planning travel prior to the pandemic. Then, we can delve into participants' attitudes towards, and thought processes around, planning travel post-pandemic. 
+                                <br><br>From user interviews, I found that many prioritize food and non-tourist activities as a way to experience local cultures. They used a combination of Google products (e.g. Sheets, Calendar, Maps) for logistics and Yelp for food recommenations. When thinking about traveling in the current climate, they expressed concern around unexpected cancellations, inaccurate business hours, unfamiliar COVID restrictions, risk of infection, and juggling work in new time zones. After synthesizing these findings in an affinity diagram, I created a user persona and empathy map as a model for my user base.
+                            </p>
+                            <img src="Images/Project1_1.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            02/ definition & ideation
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Working professionals are starting to take advantage of remote-work opportunities in order to experience different cultures. Through user research, it was observed that they experience a lot of stress juggling their jobs while traveling (which ultimately funds their travels), resulting in decreased enjoyment of these local experiences that spurred their desire to travel in the first place. How might I make an app to help travelers working remotely more easily coordinate their travel and work schedules with readily available COVID-related information?
+                                <br><br>Developing this problem statement led me to prioritize the following features: time zone reminders to not miss meetings, a visual calendar to keep track of both travel and work schedules, crowd and noise information to estimate work conditions and risk of infection, and filters to view activities that are open during available slots in a user’s schedule.
+                            </p>
+                            <img src="Images/Project1_2.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            03/ wireframing & prototyping
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>The user flow focuses on two core functions: 1) being able to easily see a combined, master calendar showing both work events and travel activities, and 2) quickly find local activities that satisfy my user persona’s priorities (e.g. crowd, noise, fits into schedule). Essentially, this redesign is a combination of Google Calendar and Google Maps, with specific filters based on what concerns rose to the surface during user testing.
+                                <br><br>I created paper prototypes and digital wireframes of a lo-fi app design with five main tabs: account settings where users can sync other calendars and change calendar colors, “month view” showing the number of events per day in a month, “day view” of the events in a day, “map view” of nearby activities with relevant filters (e.g. crowd, noise, time), and bookmarked activities for users to go back to.
+                            </p>
+                            <img src="Images/Project1_3.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              04/ user testing & iteration
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <p>The biggest obstacle I encountered during user testing was how clunky and limited my prototype’s interactivity was. I had never used Figma before, nor did we cover the basics yet in my UX/UI Design program (the emphasis for this project was on the research and ideation phases, not as much on wireframing and prototyping). As a result, my designs took far, far longer than it should have (e.g. not using components, auto-layout, frames, etc.), and most importantly users had trouble testing my prototype so it was difficult to get actionable feedback. 
+                                <br><br>I had prototyped in Invision using static images of Figma frames, so I made frames of every single interaction I wanted to test, step by step. Since this took a long time, I only “prototyped” specific tasks I wanted users to test, and as a result users continually got hung up on how uninteractive the app was and that it had such limited functionality.
+                            </p>
+                            <img src="Images/Project1_4.png">
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="headingFive">
+                          <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                              05/ final result & reflection
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <p>This was my first hands-on experience with designing a mobile app from start to finish.
+                                <br><br>My biggest takeaway is how much work goes into creating what I thought were simple images given to front-end developers. It was eye-opening to go through the entire user research process from user interviews to empathy maps and ending in prototyping and testing, all in order to create something people genuinely want and like to use.
+                                <br><br>Now that I have more design projects and many, many more hours of Figma under my belt, I’d love to revisit this and make it better. Since this was my first project, I didn’t know how to use auto-layout or components and component variants nor did I know you could even prototype within Figma itself (I used Invision with static images). Once I discovered these features, my entire wireframing and prototyping process became so much more efficient and refined. Dare I be cliché, but my whole life was changed!
+                            </p>
+                            <img src="Images/Project1_5.png">
+                        </div>
+                        </div>
+                      </div>
+                  </div>
             </div>
         </section>
     </div>
@@ -72,5 +163,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/style.js" type="text/javascript"></script></body>
-</html>
+
+    </html>
