@@ -343,6 +343,11 @@ header #primaryNav #primaryNavProjects #secondaryNav li a {
     justify-content: space-between;
 }
 
+.card-body img {
+    width: 30%;
+    height: 30%;
+}
+
 /* Footer  */
 
 footer {
